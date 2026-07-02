@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // --- State Initialization ---
   let cart = [];
-  const WHATSAPP_NUMBER = '919848022338'; // Target business number (Telangana country code + number)
+  const WHATSAPP_NUMBER = '918897107975'; // Target business number (Telangana country code + number)
   
   // --- DOM Elements ---
   const body = document.body;
@@ -40,13 +40,22 @@ document.addEventListener('DOMContentLoaded', () => {
      1. Theme Toggle Logic (Light / Dark Mode)
      ========================================================================== */
   const initTheme = () => {
+    // Version key: if theme was saved before v2, reset it to light (new default)
+    const themeVersion = localStorage.getItem('themeVersion');
+    if (themeVersion !== 'v2') {
+      // Clear any old dark preference and enforce light as default
+      localStorage.removeItem('theme');
+      localStorage.setItem('themeVersion', 'v2');
+    }
+
     const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+
+    // Default is always LIGHT — dark only if user explicitly chose it
+    if (savedTheme === 'dark') {
       body.classList.add('dark-theme');
     } else {
       body.classList.remove('dark-theme');
+      localStorage.setItem('theme', 'light');
     }
   };
   
@@ -530,6 +539,28 @@ document.addEventListener('DOMContentLoaded', () => {
       behavior: 'smooth'
     });
   });
+
+  /* ==========================================================================
+     12. Scroll-Driven Fade-In Animations (IntersectionObserver)
+     ========================================================================== */
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        fadeObserver.unobserve(entry.target); // Stop observing once visible
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.fade-in-section').forEach(section => {
+    fadeObserver.observe(section);
+  });
+
+  // Immediately show hero section without waiting for scroll
+  const heroSection = document.querySelector('#home');
+  if (heroSection) {
+    setTimeout(() => heroSection.classList.add('is-visible'), 100);
+  }
   
   // Initial renders
   renderCart();

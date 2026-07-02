@@ -13,6 +13,10 @@
 </head>
 <body>
 
+  <!-- Background Decorative Glowing Lights -->
+  <div class="ambient-glow ambient-blue"></div>
+  <div class="ambient-glow ambient-gold"></div>
+
   <!-- ==========================================================================
        HEADER / NAVIGATION
        ========================================================================== -->
@@ -71,12 +75,7 @@
   <!-- ==========================================================================
        HERO SECTION
        ========================================================================== -->
-  <section id="home" class="hero">
-    <div class="hero-bg-shapes">
-      <div class="hero-shape hero-shape-1"></div>
-      <div class="hero-shape hero-shape-2"></div>
-    </div>
-    
+  <section id="home" class="hero dot-grid-bg fade-in-section">
     <div class="container">
       <div class="hero-content">
         <span class="badge">WHOLESALE HARDWARE & SANITARY</span>
@@ -90,7 +89,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
             </svg>
           </a>
-          <a href="https://wa.me/919848022338?text=Hello%20Laxmi%20Electricals,%20I%20am%20looking%20for%20wholesale%20rates%20for%20my%20site%20in%20Hyderabad." target="_blank" class="btn btn-whatsapp" id="whatsapp-quick-btn">
+          <a href="https://wa.me/918897107975?text=Hello%20Laxmi%20Electricals,%20I%20am%20looking%20for%20wholesale%20rates%20for%20my%20site%20in%20Hyderabad." target="_blank" class="btn btn-whatsapp" id="whatsapp-quick-btn">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
               <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.638 1.97 14.162.945 11.533.945c-5.445 0-9.87 4.373-9.874 9.8.001 2.01.527 3.973 1.524 5.71l-.993 3.624 3.757-.975zm12.44-8.835c-.328-.163-1.94-.945-2.24-1.053-.298-.109-.516-.163-.734.163-.218.328-.844 1.053-1.034 1.27-.19.218-.38.245-.707.082-.328-.163-1.385-.505-2.637-1.611-.973-.859-1.63-1.921-1.821-2.247-.19-.328-.02-.505.143-.667.147-.146.328-.38.49-.572.163-.19.218-.328.328-.545.109-.218.055-.409-.027-.572-.082-.164-.734-1.744-1.006-2.4-.265-.627-.535-.54-.734-.55-.19-.01-.409-.012-.627-.012-.218 0-.572.082-.871.409-.299.328-1.143 1.102-1.143 2.686 0 1.584 1.17 3.117 1.334 3.335.163.218 2.302 3.473 5.575 4.86.778.33 1.386.527 1.859.676.782.245 1.493.21 2.056.127.628-.093 1.94-.859 2.213-1.649.273-.79.273-1.47.19-1.61-.082-.136-.299-.218-.627-.38z"/>
             </svg>
@@ -142,7 +141,7 @@
   <!-- ==========================================================================
        TRUST COUNTERS
        ========================================================================== -->
-  <section class="stats" aria-label="Business Metrics">
+  <section class="stats fade-in-section" aria-label="Business Metrics">
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item">
@@ -168,7 +167,7 @@
   <!-- ==========================================================================
        ABOUT US
        ========================================================================== -->
-  <section id="about" class="about-section section-padding">
+  <section id="about" class="about-section section-padding fade-in-section">
     <div class="container">
       <div class="about-grid">
         <div class="about-images">
@@ -226,12 +225,12 @@
   <!-- ==========================================================================
        PRODUCTS & CATEGORIES (INTERACTIVE CATALOGUE)
        ========================================================================== -->
-  <section id="products" class="products-section section-padding">
+  <section id="products" class="products-section section-padding fade-in-section">
     <div class="container">
       <div class="section-header">
         <span class="badge">Wholesale Catalogues</span>
         <h2>Explore Our Materials</h2>
-        <p>Browse top product ranges across electrical, sanitary, plumbing, and hardware categories. Add items to your quote list for an instant wholesale discount.</p>
+        <p>Browse top product ranges. Click on cards to view specs or add items directly to your quote list to calculate estimated wholesale pricing.</p>
       </div>
       
       <!-- Category Tabs -->
@@ -246,8 +245,9 @@
       <!-- Electrical Grid -->
       <div class="products-grid active" id="electrical-grid">
         <!-- Product 1 -->
-        <div class="product-card" data-id="elec-01" data-category="electrical">
+        <div class="product-card" data-id="elec-01" data-category="electrical" data-price="1800">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹1,800/Coil</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
             </svg>
@@ -263,8 +263,9 @@
           </div>
         </div>
         <!-- Product 2 -->
-        <div class="product-card" data-id="elec-02" data-category="electrical">
+        <div class="product-card" data-id="elec-02" data-category="electrical" data-price="45">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹45/Switch</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -281,8 +282,9 @@
           </div>
         </div>
         <!-- Product 3 -->
-        <div class="product-card" data-id="elec-03" data-category="electrical">
+        <div class="product-card" data-id="elec-03" data-category="electrical" data-price="280">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹280/Pole</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
             </svg>
@@ -302,8 +304,9 @@
       <!-- Lighting Grid -->
       <div class="products-grid" id="lighting-grid">
         <!-- Product 1 -->
-        <div class="product-card" data-id="light-01" data-category="lighting">
+        <div class="product-card" data-id="light-01" data-category="lighting" data-price="320">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹320/Pc</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364.364l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
             </svg>
@@ -319,8 +322,9 @@
           </div>
         </div>
         <!-- Product 2 -->
-        <div class="product-card" data-id="light-02" data-category="lighting">
+        <div class="product-card" data-id="light-02" data-category="lighting" data-price="1850">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹1,850/Pc</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1zM21 8l-4 4 4 4V8z"/>
             </svg>
@@ -340,8 +344,9 @@
       <!-- Sanitary Grid -->
       <div class="products-grid" id="sanitary-grid">
         <!-- Product 1 -->
-        <div class="product-card" data-id="san-01" data-category="sanitary">
+        <div class="product-card" data-id="san-01" data-category="sanitary" data-price="2400">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹2,400/Pc</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
             </svg>
@@ -357,8 +362,9 @@
           </div>
         </div>
         <!-- Product 2 -->
-        <div class="product-card" data-id="san-02" data-category="sanitary">
+        <div class="product-card" data-id="san-02" data-category="sanitary" data-price="6500">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹6,500/Set</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
             </svg>
@@ -378,8 +384,9 @@
       <!-- Plumbing Grid -->
       <div class="products-grid" id="plumbing-grid">
         <!-- Product 1 -->
-        <div class="product-card" data-id="plumb-01" data-category="plumbing">
+        <div class="product-card" data-id="plumb-01" data-category="plumbing" data-price="420">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹420/Length</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18"/>
             </svg>
@@ -395,8 +402,9 @@
           </div>
         </div>
         <!-- Product 2 -->
-        <div class="product-card" data-id="plumb-02" data-category="plumbing">
+        <div class="product-card" data-id="plumb-02" data-category="plumbing" data-price="290">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹290/Length</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
             </svg>
@@ -416,8 +424,9 @@
       <!-- Hardware Grid -->
       <div class="products-grid" id="hardware-grid">
         <!-- Product 1 -->
-        <div class="product-card" data-id="hard-01" data-category="hardware">
+        <div class="product-card" data-id="hard-01" data-category="hardware" data-price="85">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹85/Pc</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
             </svg>
@@ -433,8 +442,9 @@
           </div>
         </div>
         <!-- Product 2 -->
-        <div class="product-card" data-id="hard-02" data-category="hardware">
+        <div class="product-card" data-id="hard-02" data-category="hardware" data-price="1250">
           <div class="product-image">
+            <span class="product-price-badge">Est. ₹1,250/Set</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
             </svg>
@@ -456,12 +466,12 @@
   <!-- ==========================================================================
        BRANDS SHOWCASE
        ========================================================================== -->
-  <section id="brands" class="brands-section section-padding" aria-label="Partner Brands">
+  <section id="brands" class="brands-section section-padding fade-in-section" aria-label="Partner Brands">
     <div class="container">
       <div class="section-header">
         <span class="badge">DIRECT BRAND PARTNERS</span>
         <h2>Brands We Supply</h2>
-        <p>We source materials directly from India's most trusted manufacturers, ensuring authentic brand warranties and bulk trade prices for your project.</p>
+        <p>We source materials directly from India's most trusted manufacturers. Click on any brand below to highlight their products in the catalogue!</p>
       </div>
       
       <div class="brands-grid">
@@ -562,7 +572,7 @@
   <!-- ==========================================================================
        PHOTO GALLERY SECTION
        ========================================================================== -->
-  <section id="gallery" class="gallery-section section-padding">
+  <section id="gallery" class="gallery-section section-padding fade-in-section">
     <div class="container">
       <div class="section-header">
         <span class="badge">OUR SHOWROOM & STOCK</span>
@@ -599,7 +609,7 @@
   <!-- ==========================================================================
        TESTIMONIALS SECTION
        ========================================================================== -->
-  <section class="testimonials-section section-padding" aria-label="Customer Reviews">
+  <section class="testimonials-section section-padding fade-in-section" aria-label="Customer Reviews">
     <div class="container">
       <div class="section-header">
         <span class="badge">TESTIMONIALS</span>
@@ -607,62 +617,81 @@
         <p>Real feedback from electrical contractors, builders, and local retailer networks across Hyderabad & Secunderabad.</p>
       </div>
       
-      <div class="reviews-grid">
-        <!-- Review 1 -->
-        <div class="review-card">
-          <div class="review-stars">
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          </div>
-          <p>"We have been purchasing modular switches, Polycab wires, and sanitary pipes from Laxmi Electrical for our housing projects in Secunderabad. Their wholesale pricing beats other vendors and their logistics team is extremely punctual."</p>
-          <div class="review-user">
-            <div class="user-avatar">SR</div>
-            <div class="user-details">
-              <h4>Sridhar Rao</h4>
-              <p>S.R. Builders & Developers</p>
+      <div class="testimonial-slider-container">
+        <div class="testimonial-track-wrapper">
+          <div class="testimonial-track" id="testimonial-track">
+            
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="review-card">
+                <div class="review-stars">
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                </div>
+                <p>"We have been purchasing modular switches, Polycab wires, and sanitary pipes from Laxmi Electrical for our housing projects in Secunderabad. Their wholesale pricing beats other vendors and their logistics team is extremely punctual."</p>
+                <div class="review-user">
+                  <div class="user-avatar">SR</div>
+                  <div class="user-details">
+                    <h4>Sridhar Rao</h4>
+                    <p>S.R. Builders & Developers</p>
+                  </div>
+                </div>
+              </div>
             </div>
+            
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="review-card">
+                <div class="review-stars">
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                </div>
+                <p>"Finding a shop that keeps genuine stock of both high-end electrical modular items and plumbing pipes under one roof is hard. Laxmi Electrical solves that for us. Highly recommended for retail shop owners."</p>
+                <div class="review-user">
+                  <div class="user-avatar">KK</div>
+                  <div class="user-details">
+                    <h4>Kalyan Kumar</h4>
+                    <p>Kalyan Hardware & Sanitary Retail</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="review-card">
+                <div class="review-stars">
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                </div>
+                <p>"For my commercial building site, I needed massive lots of PVC plumbing conduits and copper wiring. Their quotation was quick, and they even offered custom payment facilities for builders. Exceptional service."</p>
+                <div class="review-user">
+                  <div class="user-avatar">PR</div>
+                  <div class="user-details">
+                    <h4>Prashant Reddy</h4>
+                    <p>Reddy Infrastructure Pvt Ltd</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
         
-        <!-- Review 2 -->
-        <div class="review-card">
-          <div class="review-stars">
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          </div>
-          <p>"Finding a shop that keeps genuine stock of both high-end electrical modular items and plumbing pipes under one roof is hard. Laxmi Electrical solves that for us. Highly recommended for retail shop owners."</p>
-          <div class="review-user">
-            <div class="user-avatar">KK</div>
-            <div class="user-details">
-              <h4>Kalyan Kumar</h4>
-              <p>Kalyan Hardware & Sanitary Retail</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Review 3 -->
-        <div class="review-card">
-          <div class="review-stars">
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          </div>
-          <p>"For my commercial building site, I needed massive lots of PVC plumbing conduits and copper wiring. Their quotation was quick, and they even offered custom payment facilities for builders. Exceptional service."</p>
-          <div class="review-user">
-            <div class="user-avatar">PR</div>
-            <div class="user-details">
-              <h4>Prashant Reddy</h4>
-              <p>Reddy Infrastructure Pvt Ltd</p>
-            </div>
-          </div>
+        <!-- Dots indicators -->
+        <div class="slider-dots" id="slider-dots">
+          <span class="slider-dot active" data-index="0"></span>
+          <span class="slider-dot" data-index="1"></span>
+          <span class="slider-dot" data-index="2"></span>
         </div>
       </div>
     </div>
@@ -671,7 +700,7 @@
   <!-- ==========================================================================
        FAQs SECTION
        ========================================================================== -->
-  <section class="faq-section section-padding" aria-label="Frequently Asked Questions">
+  <section class="faq-section section-padding fade-in-section" aria-label="Frequently Asked Questions">
     <div class="container">
       <div class="section-header">
         <span class="badge">HELP & INFO</span>
@@ -746,7 +775,7 @@
   <!-- ==========================================================================
        CONTACT & MAPS SECTION
        ========================================================================== -->
-  <section id="contact" class="contact-section section-padding">
+  <section id="contact" class="contact-section section-padding dot-grid-bg fade-in-section">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info">
@@ -765,8 +794,8 @@
             </div>
             <div class="contact-text">
               <h4>Phone Numbers</h4>
-              <p><a href="tel:+919848022338">+91 98480 22338</a></p>
-              <p><a href="tel:+919848011223">+91 98480 11223</a> (Sales Head)</p>
+              <p><a href="tel:+918897107975">+91 88971 07975</a></p>
+              <p><a href="tel:+918897107975">+91 88971 07975</a> (Sales Head)</p>
             </div>
           </div>
           
@@ -914,7 +943,7 @@
               <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
               </svg>
-              <span>+91 98480 22338</span>
+              <span>+91 88971 07975</span>
             </div>
           </div>
         </div>
@@ -960,6 +989,20 @@
       
       <!-- Cart Checkout Form -->
       <div class="cart-footer">
+        <!-- B2B Wholesale Tracker Progress Bar -->
+        <div class="wholesale-tracker">
+          <div class="tracker-header">
+            <span>Wholesale Price Progress:</span>
+            <span id="tracker-value">₹0 / ₹10,000</span>
+          </div>
+          <div class="tracker-bar-bg">
+            <div class="tracker-bar-fill" id="tracker-bar-fill"></div>
+          </div>
+          <div class="tracker-status-text" id="tracker-status-text">
+            Add items to qualify for wholesale discounts.
+          </div>
+        </div>
+
         <form id="cart-checkout-form" class="cart-checkout-form">
           <h4>Send Wholesale Quote Request</h4>
           <div class="form-group" style="margin-bottom: 12px;">
@@ -993,6 +1036,32 @@
       <span id="lightbox-close" class="lightbox-close" aria-label="Close zoom view">&times;</span>
       <img id="lightbox-image" class="lightbox-image" src="" alt="Zoomed view of gallery item">
       <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PRODUCT QUICK VIEW MODAL
+       ========================================================================== -->
+  <div id="quickview-modal" class="quickview-modal" role="dialog" aria-hidden="true">
+    <div class="quickview-card">
+      <span id="quickview-close" class="quickview-close" aria-label="Close details modal">&times;</span>
+      <div class="quickview-content-grid">
+        <div class="quickview-media" id="quickview-media">
+          <!-- Loaded dynamically via JS -->
+        </div>
+        <div class="quickview-details">
+          <span class="badge" id="quickview-category">Category</span>
+          <h3 id="quickview-title">Product Name</h3>
+          <div class="quickview-price" id="quickview-price">Est: ₹0</div>
+          <p id="quickview-desc">Description of product</p>
+          <div class="quickview-specs">
+            <div class="spec-line"><span>Authorized:</span><span id="quickview-spec-auth">Yes, Direct Sourced</span></div>
+            <div class="spec-line"><span>Warranty:</span><span id="quickview-spec-warranty">Standard Manufacturer Warranty</span></div>
+            <div class="spec-line"><span>Stock:</span><span style="color:#20ba5a; font-weight:700;">In Stock (Bulk Availability)</span></div>
+          </div>
+          <button class="btn btn-primary btn-sm" style="width:100%;" id="quickview-add-btn">Add to Quote List</button>
+        </div>
+      </div>
     </div>
   </div>
 
